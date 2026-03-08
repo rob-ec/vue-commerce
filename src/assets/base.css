@@ -1,0 +1,79 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --color-blue-400: oklch(70.7% 0.165 254.624);
+  
+  --color-slate-100: oklch(96.8% 0.007 247.896);
+  --color-slate-200: oklch(92.9% 0.013 255.508);
+  --color-slate-300: oklch(86.9% 0.022 252.894);
+  
+  --color-gray-700: oklch(37.2% 0.044 257.287);
+  --color-gray-800: oklch(27.8% 0.033 256.848);
+  --color-gray-900: oklch(21% 0.034 264.665);
+  
+  --color-green-200: oklch(92.5% 0.084 155.995);
+  --color-green-600: oklch(62.7% 0.194 149.214);
+  --color-green-800: oklch(44.8% 0.119 151.328);
+  
+  --color-rose-700: oklch(51.4% 0.222 16.935);
+
+  --color-sky-200: oklch(90.1% 0.058 230.902);
+  --color-sky-300: oklch(82.8% 0.111 230.318);
+  --color-sky-400: oklch(74.6% 0.16 232.661);
+  --color-sky-500: oklch(71.5% 0.143 215.221);
+  --color-sky-600: oklch(58.8% 0.158 241.966);
+  --color-sky-700: oklch(50% 0.134 242.749);
+
+  --color-white: #fff;
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--color-slate-100);
+  --color-background-soft: var(--color-slate-200);
+
+  --color-background-modal: rgba(0, 0, 0, 0.8);
+
+  --color-text: var(--color-gray-900);
+
+  --section-gap: 160px;
+
+  --primary-color: var(--color-rose-700);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--color-gray-900);
+    --color-background-soft: var(--color-gray-800);
+
+    --color-text: var(--color-slate-100);
+
+    --primary-color: var(--color-rose-700);
+  }
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
